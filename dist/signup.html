@@ -1,0 +1,910 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><title>My page</title><meta name="next-head-count" content="3"/><link rel="preload" href="/_next/static/chunks/main-b447c53085bdfe1844bd.js" as="script"/><link rel="preload" href="/_next/static/chunks/webpack-488dc228921f1fdbc0e7.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework.d3c9d973ca0cf43312e7.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons.5f7a56ae4f71e081c0df.js" as="script"/><link rel="preload" href="/_next/static/chunks/ae9ddcccd7d264c72aab37eca45491082bc6cda4.456309f83e32b2ff19ed.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-03d67789972c2d5d7448.js" as="script"/><link rel="preload" href="/_next/static/chunks/c505d4e10ebb6769d3a2a0566f7dff1b351ed45e.f9bf3b5715522c601efb.js" as="script"/><link rel="preload" href="/_next/static/chunks/f27aa761d303bda5e54d6e33b2f2b9ad2660fe4c.56bbac29f0ede4b6d58e.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/signup-228205a65033142fa305.js" as="script"/><style id="jss-server-side">html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: #fff;
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  backdrop-filter: blur(3px);
+  background-size: cover;
+  background-color: #303030;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/bg.jpg);
+  background-attachment: fixed;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #303030;
+}
+.MuiContainer-root {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiContainer-disableGutters {
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+  .MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiButtonBase-root::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiButtonBase-root.Mui-disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+@media print {
+  .MuiButtonBase-root {
+    color-adjust: exact;
+  }
+}
+  .MuiButton-root {
+    color: #fff;
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #DC7633;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(220, 118, 51, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #4FD555;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(79, 213, 85, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #DC7633;
+    border: 1px solid rgba(220, 118, 51, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #DC7633;
+    background-color: rgba(220, 118, 51, 0.08);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #4FD555;
+    border: 1px solid rgba(79, 213, 85, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #4FD555;
+    background-color: rgba(79, 213, 85, 0.08);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #DC7633;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: rgb(154, 82, 35);
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #DC7633;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #4FD555;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: rgb(55, 149, 59);
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #4FD555;
+  }
+}
+  .MuiButton-disableElevation {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:hover {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-focusVisible {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:active {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-disabled {
+    box-shadow: none;
+  }
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
+  .MuiFormGroup-root {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .MuiFormGroup-row {
+    flex-direction: row;
+  }
+@keyframes mui-auto-fill {}
+@keyframes mui-auto-fill-cancel {}
+  .MuiInputBase-root {
+    color: #fff;
+    cursor: text;
+    display: inline-flex;
+    position: relative;
+    font-size: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.1876em;
+    letter-spacing: 0.00938em;
+  }
+  .MuiInputBase-root.Mui-disabled {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: default;
+  }
+  .MuiInputBase-multiline {
+    padding: 6px 0 7px;
+  }
+  .MuiInputBase-multiline.MuiInputBase-marginDense {
+    padding-top: 3px;
+  }
+  .MuiInputBase-fullWidth {
+    width: 100%;
+  }
+  .MuiInputBase-input {
+    font: inherit;
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    letter-spacing: inherit;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiInputBase-input::-webkit-input-placeholder {
+    color: currentColor;
+    opacity: 0.5;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiInputBase-input::-moz-placeholder {
+    color: currentColor;
+    opacity: 0.5;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiInputBase-input:-ms-input-placeholder {
+    color: currentColor;
+    opacity: 0.5;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiInputBase-input::-ms-input-placeholder {
+    color: currentColor;
+    opacity: 0.5;
+    transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiInputBase-input:focus {
+    outline: 0;
+  }
+  .MuiInputBase-input:invalid {
+    box-shadow: none;
+  }
+  .MuiInputBase-input::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  .MuiInputBase-input.Mui-disabled {
+    opacity: 1;
+  }
+  .MuiInputBase-input:-webkit-autofill {
+    animation-name: mui-auto-fill;
+    animation-duration: 5000s;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
+    opacity: 0 !important;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
+    opacity: 0 !important;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
+    opacity: 0 !important;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
+    opacity: 0 !important;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
+    opacity: 0.5;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
+    opacity: 0.5;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
+    opacity: 0.5;
+  }
+  label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
+    opacity: 0.5;
+  }
+  .MuiInputBase-inputMarginDense {
+    padding-top: 3px;
+  }
+  .MuiInputBase-inputMultiline {
+    height: auto;
+    resize: none;
+    padding: 0;
+  }
+  .MuiInputBase-inputTypeSearch {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+  }
+  .jss1 {
+    top: -5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0 8px;
+    overflow: hidden;
+    position: absolute;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+  .jss2 {
+    padding: 0;
+    text-align: left;
+    transition: width 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    line-height: 11px;
+  }
+  .jss3 {
+    width: auto;
+    height: 11px;
+    display: block;
+    padding: 0;
+    font-size: 0.75em;
+    max-width: 0.01px;
+    text-align: left;
+    transition: max-width 50ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    visibility: hidden;
+  }
+  .jss3 > span {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .jss4 {
+    max-width: 1000px;
+    transition: max-width 100ms cubic-bezier(0.0, 0, 0.2, 1) 50ms;
+  }
+  .MuiOutlinedInput-root {
+    position: relative;
+    border-radius: 4px;
+  }
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #fff;
+  }
+@media (hover: none) {
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.23);
+  }
+}
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #DC7633;
+    border-width: 2px;
+  }
+  .MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+    border-color: #ff1744;
+  }
+  .MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  .MuiOutlinedInput-colorSecondary.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #4FD555;
+  }
+  .MuiOutlinedInput-adornedStart {
+    padding-left: 14px;
+  }
+  .MuiOutlinedInput-adornedEnd {
+    padding-right: 14px;
+  }
+  .MuiOutlinedInput-multiline {
+    padding: 18.5px 14px;
+  }
+  .MuiOutlinedInput-multiline.MuiOutlinedInput-marginDense {
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.23);
+  }
+  .MuiOutlinedInput-input {
+    padding: 18.5px 14px;
+  }
+  .MuiOutlinedInput-input:-webkit-autofill {
+    caret-color: #fff;
+    border-radius: inherit;
+    -webkit-box-shadow: 0 0 0 100px #266798 inset;
+    -webkit-text-fill-color: #fff;
+  }
+  .MuiOutlinedInput-inputMarginDense {
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+  }
+  .MuiOutlinedInput-inputMultiline {
+    padding: 0;
+  }
+  .MuiOutlinedInput-inputAdornedStart {
+    padding-left: 0;
+  }
+  .MuiOutlinedInput-inputAdornedEnd {
+    padding-right: 0;
+  }
+  .MuiFormLabel-root {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0;
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.00938em;
+  }
+  .MuiFormLabel-root.Mui-focused {
+    color: #DC7633;
+  }
+  .MuiFormLabel-root.Mui-disabled {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .MuiFormLabel-root.Mui-error {
+    color: #ff1744;
+  }
+  .MuiFormLabel-colorSecondary.Mui-focused {
+    color: #4FD555;
+  }
+  .MuiFormLabel-asterisk.Mui-error {
+    color: #ff1744;
+  }
+  .MuiInputLabel-root {
+    display: block;
+    transform-origin: top left;
+  }
+  .MuiInputLabel-formControl {
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(0, 24px) scale(1);
+  }
+  .MuiInputLabel-marginDense {
+    transform: translate(0, 21px) scale(1);
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, 1.5px) scale(0.75);
+    transform-origin: top left;
+  }
+  .MuiInputLabel-animated {
+    transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  }
+  .MuiInputLabel-filled {
+    z-index: 1;
+    transform: translate(12px, 20px) scale(1);
+    pointer-events: none;
+  }
+  .MuiInputLabel-filled.MuiInputLabel-marginDense {
+    transform: translate(12px, 17px) scale(1);
+  }
+  .MuiInputLabel-filled.MuiInputLabel-shrink {
+    transform: translate(12px, 10px) scale(0.75);
+  }
+  .MuiInputLabel-filled.MuiInputLabel-shrink.MuiInputLabel-marginDense {
+    transform: translate(12px, 7px) scale(0.75);
+  }
+  .MuiInputLabel-outlined {
+    z-index: 1;
+    transform: translate(14px, 20px) scale(1);
+    pointer-events: none;
+  }
+  .MuiInputLabel-outlined.MuiInputLabel-marginDense {
+    transform: translate(14px, 12px) scale(1);
+  }
+  .MuiInputLabel-outlined.MuiInputLabel-shrink {
+    transform: translate(14px, -6px) scale(0.75);
+  }
+  .MuiFormControl-root {
+    border: 0;
+    margin: 0;
+    display: inline-flex;
+    padding: 0;
+    position: relative;
+    min-width: 0;
+    flex-direction: column;
+    vertical-align: top;
+  }
+  .MuiFormControl-marginNormal {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  .MuiFormControl-marginDense {
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+  .MuiFormControl-fullWidth {
+    width: 100%;
+  }
+  .MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiSvgIcon-colorPrimary {
+    color: #DC7633;
+  }
+  .MuiSvgIcon-colorSecondary {
+    color: #4FD555;
+  }
+  .MuiSvgIcon-colorAction {
+    color: #fff;
+  }
+  .MuiSvgIcon-colorError {
+    color: #ff1744;
+  }
+  .MuiSvgIcon-colorDisabled {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .MuiSvgIcon-fontSizeInherit {
+    font-size: inherit;
+  }
+  .MuiSvgIcon-fontSizeSmall {
+    font-size: 1.25rem;
+  }
+  .MuiSvgIcon-fontSizeLarge {
+    font-size: 2.1875rem;
+  }
+
+  .jss5 {
+    color: #fff;
+    background-color: #1877f2;
+  }
+  .jss5:hover, .jss5:focus, .jss5:active {
+    filter: contrast(0.5);
+    background-color: #1877f2;
+  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 6rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.167;
+    letter-spacing: -0.01562em;
+  }
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+  }
+  .MuiTypography-h3 {
+    font-size: 3rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.167;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.334;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    letter-spacing: 0.08333em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #DC7633;
+  }
+  .MuiTypography-colorSecondary {
+    color: #4FD555;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: #fff;
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .MuiTypography-colorError {
+    color: #ff1744;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .jss6 {
+    cursor: pointer;
+  }</style><style data-styled="" data-styled-version="5.1.1">.bhvllh{-webkit-filter:drop-shadow(2px 4px 6px black);filter:drop-shadow(2px 4px 6px black);width:100%;}/*!sc*/
+data-styled.g1[id="Logo__LogoImg-slv5sj-0"]{content:"bhvllh,"}/*!sc*/
+.hRgCYi{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}/*!sc*/
+.hRgCYi > *:not(:first-child){margin-left:5px;}/*!sc*/
+data-styled.g2[id="FormSignUp__FormSignUpButtonWrapper-sc-968onk-0"]{content:"hRgCYi,"}/*!sc*/
+.dLwoQo{margin-right:5px;}/*!sc*/
+data-styled.g3[id="LinkLogin__LinkLoginText-sc-1ggkn7-0"]{content:"dLwoQo,"}/*!sc*/
+.hPNVLy{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;min-height:100vh;max-width:400px;}/*!sc*/
+data-styled.g4[id="SignUp__Wrapper-sc-1mof4rr-0"]{content:"hPNVLy,"}/*!sc*/
+.eArecE{max-width:100px;}/*!sc*/
+data-styled.g5[id="SignUp__LogoWrapper-sc-1mof4rr-1"]{content:"eArecE,"}/*!sc*/
+.fJnixI{width:100%;}/*!sc*/
+data-styled.g6[id="SignUp__FormSignUpWrapper-sc-1mof4rr-2"]{content:"fJnixI,"}/*!sc*/
+.cIOXWC{text-align:center;}/*!sc*/
+data-styled.g7[id="SignUp__LinkLoginWrapper-sc-1mof4rr-3"]{content:"cIOXWC,"}/*!sc*/
+</style></head><body><div id="__next"><main class="MuiContainer-root MuiContainer-maxWidthXs"><div class="SignUp__Wrapper-sc-1mof4rr-0 hPNVLy"><div class="SignUp__LogoWrapper-sc-1mof4rr-1 eArecE"><img alt="Logo" src="/logo.png" class="Logo__LogoImg-slv5sj-0 bhvllh"/></div><div class="SignUp__FormSignUpWrapper-sc-1mof4rr-2 fJnixI"><div class="MuiFormGroup-root"><div class="MuiFormControl-root MuiTextField-root"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined" data-shrink="false" for="name" id="name-label">NOME</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"><input type="text" aria-invalid="false" id="name" class="MuiInputBase-input MuiOutlinedInput-input"/><fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline"><legend class="jss3"><span>NOME</span></legend></fieldset></div></div><br/><div class="MuiFormControl-root MuiTextField-root"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined" data-shrink="false" for="last_name" id="last_name-label">SOBRENOME</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"><input type="text" aria-invalid="false" id="last_name" class="MuiInputBase-input MuiOutlinedInput-input"/><fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline"><legend class="jss3"><span>SOBRENOME</span></legend></fieldset></div></div><br/><div class="MuiFormControl-root MuiTextField-root"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined" data-shrink="false" for="username" id="username-label">NOME DE USUÁRIO</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"><input type="text" aria-invalid="false" id="username" class="MuiInputBase-input MuiOutlinedInput-input"/><fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline"><legend class="jss3"><span>NOME DE USUÁRIO</span></legend></fieldset></div></div><br/><div class="MuiFormControl-root MuiTextField-root"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined" data-shrink="false" for="email" id="email-label">EMAIL</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"><input type="text" aria-invalid="false" id="email" class="MuiInputBase-input MuiOutlinedInput-input"/><fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline"><legend class="jss3"><span>EMAIL</span></legend></fieldset></div></div><br/><div class="MuiFormControl-root MuiTextField-root"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined" data-shrink="false" for="password" id="password-label">SENHA</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"><input type="password" aria-invalid="false" id="password" class="MuiInputBase-input MuiOutlinedInput-input"/><fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline"><legend class="jss3"><span>SENHA</span></legend></fieldset></div></div><br/><div class="MuiFormControl-root MuiTextField-root"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined" data-shrink="false" for="confirm_password" id="confirm_password-label">DIGITE SUA SENHA NOVAMENTE</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"><input type="password" aria-invalid="false" id="confirm_password" class="MuiInputBase-input MuiOutlinedInput-input"/><fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline"><legend class="jss3"><span>DIGITE SUA SENHA NOVAMENTE</span></legend></fieldset></div></div><br/><div display="flex" class="FormSignUp__FormSignUpButtonWrapper-sc-968onk-0 hRgCYi"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-fullWidth" tabindex="0" type="button"><span class="MuiButton-label">CADASTRAR</span></button><button class="MuiButtonBase-root MuiButton-root MuiButton-contained jss5 MuiButton-fullWidth" tabindex="0" type="button"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"></path></svg></span>SIGN IN</span></button></div></div></div><div class="SignUp__LinkLoginWrapper-sc-1mof4rr-3 cIOXWC"><span class="LinkLogin__LinkLoginText-sc-1ggkn7-0 dLwoQo">Já possui uma conta?</span><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss6 MuiTypography-colorPrimary">Faça login</a></div></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/signup","query":{},"buildId":"e9BBHTz_dwBrMwYvp8nHR","nextExport":true,"autoExport":true,"isFallback":false}</script><script nomodule="" src="/_next/static/chunks/polyfills-c0664c850fd807bc92c2.js"></script><script src="/_next/static/chunks/main-b447c53085bdfe1844bd.js" async=""></script><script src="/_next/static/chunks/webpack-488dc228921f1fdbc0e7.js" async=""></script><script src="/_next/static/chunks/framework.d3c9d973ca0cf43312e7.js" async=""></script><script src="/_next/static/chunks/commons.5f7a56ae4f71e081c0df.js" async=""></script><script src="/_next/static/chunks/ae9ddcccd7d264c72aab37eca45491082bc6cda4.456309f83e32b2ff19ed.js" async=""></script><script src="/_next/static/chunks/pages/_app-03d67789972c2d5d7448.js" async=""></script><script src="/_next/static/chunks/c505d4e10ebb6769d3a2a0566f7dff1b351ed45e.f9bf3b5715522c601efb.js" async=""></script><script src="/_next/static/chunks/f27aa761d303bda5e54d6e33b2f2b9ad2660fe4c.56bbac29f0ede4b6d58e.js" async=""></script><script src="/_next/static/chunks/pages/signup-228205a65033142fa305.js" async=""></script><script src="/_next/static/e9BBHTz_dwBrMwYvp8nHR/_buildManifest.js" async=""></script><script src="/_next/static/e9BBHTz_dwBrMwYvp8nHR/_ssgManifest.js" async=""></script></body></html>
