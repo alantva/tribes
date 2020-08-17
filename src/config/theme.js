@@ -20,7 +20,7 @@ const theme = createMuiTheme({
       '@global': {
         body: {
           backgroundImage:
-            'linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/bg.jpg)',
+            'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/bg.jpg)',
           backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
           backdropFilter: 'blur(3px)'

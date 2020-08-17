@@ -1,5 +1,10 @@
-import WhatIsYourTribe from '../../containers/WhatIsYourTribe'
+import LayoutSignUp from '../../layouts/SignUp'
+import ContainerWhatIsYourTribe from '../../containers/WhatIsYourTribe'
 
-const PageWhatIsYourTribe = () => <WhatIsYourTribe />
+const PageWhatIsYourTribe = () => (
+  <LayoutSignUp>
+    <ContainerWhatIsYourTribe />
+  </LayoutSignUp>
+)
 
 export default PageWhatIsYourTribe

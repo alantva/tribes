@@ -1,54 +1,13 @@
-import styled from 'styled-components'
+import MuiTypography from '@material-ui/core/Typography'
 
-import MuiContainer from '@material-ui/core/Container'
-import Typography from '@material-ui/core/Typography'
-
-import Logo from '../components/atoms/Logo'
-import LinkLogin from '../components/templates/LinkLogin'
-
-const Feed = () => (
-  <MuiContainer component="main" maxWidth="xs">
-    <Wrapper>
-      <LogoWrapper>
-        <Logo />
-      </LogoWrapper>
-      <TextWrapper>
-        <Typography variant="h4">Feed</Typography>
-        <br />
-        <Typography variant="caption">
-          Em construção
-        </Typography>
-      </TextWrapper>
-      <LinkLoginWrapper>
-        <LinkLogin />
-      </LinkLoginWrapper>
-    </Wrapper>
-  </MuiContainer>
+const ContainerFeed = () => (
+  <>
+    <MuiTypography variant="h4">Feed</MuiTypography>
+    <br />
+    <MuiTypography variant="caption">
+      Em construção
+    </MuiTypography>
+  </>
 )
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  min-height: 100vh;
-  max-width: 400px;
-`
-
-const LogoWrapper = styled.div`
-  max-width: 220px;
-  margin: 10px 0;
-`
-
-const TextWrapper = styled.div`
-  text-align: center;
-  width: 100%;
-  margin-bottom: 10px;
-`
-
-const LinkLoginWrapper = styled.div`
-  text-align: center;
-  margin-bottom: 10px;
-`
-
-export default Feed
+export default ContainerFeed

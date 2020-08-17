@@ -1,5 +1,10 @@
-import Login from '../containers/Login'
+import LayoutIndex from '../layouts/Index'
+import ContainerLogin from '../containers/Login'
 
-const PageIndex = () => <Login />
+const PageIndex = () => (
+  <LayoutIndex>
+    <ContainerLogin />
+  </LayoutIndex>
+)
 
 export default PageIndex

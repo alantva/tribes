@@ -1,5 +1,10 @@
-import Feed from '../containers/Feed'
+import LayoutIndex from '../layouts/Index'
+import ContainerFeed from '../containers/Feed'
 
-const PageFeed = () => <Feed />
+const PageFeed = () => (
+  <LayoutIndex>
+    <ContainerFeed />
+  </LayoutIndex>
+)
 
 export default PageFeed

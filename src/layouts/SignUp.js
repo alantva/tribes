@@ -3,21 +3,20 @@ import styled from 'styled-components'
 import MuiContainer from '@material-ui/core/Container'
 
 import Logo from '../components/atoms/Logo'
-import FormLogin from '../components/templates/FormLogin'
-import LinkSignUp from '../components/templates/LinkSignUp'
+import LinkLogin from '../components/templates/LinkLogin'
 
-const ContainerLogin = () => (
+const SignUp = ({ children }) => (
   <MuiContainer component="main" maxWidth="xs">
     <Wrapper>
       <LogoWrapper>
         <Logo />
       </LogoWrapper>
-      <LoginWrapper>
-        <FormLogin />
-      </LoginWrapper>
-      <LinkSignUpWrapper>
-        <LinkSignUp />
-      </LinkSignUpWrapper>
+      <ChildrenWrapper>
+        {children}
+      </ChildrenWrapper>
+      <LinkLoginWrapper>
+        <LinkLogin />
+      </LinkLoginWrapper>
     </Wrapper>
   </MuiContainer>
 )
@@ -36,14 +35,15 @@ const LogoWrapper = styled.div`
   margin: 10px 0;
 `
 
-const LoginWrapper = styled.div`
+const ChildrenWrapper = styled.div`
   width: 100%;
-  margin-bottom: 10px;
-`
-
-const LinkSignUpWrapper = styled.div`
   text-align: center;
   margin-bottom: 10px;
 `
 
-export default ContainerLogin
+const LinkLoginWrapper = styled.div`
+  text-align: center;
+  margin-bottom: 10px;
+`
+
+export default SignUp

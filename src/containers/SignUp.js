@@ -1,49 +1,5 @@
-import styled from 'styled-components'
-
-import MuiContainer from '@material-ui/core/Container'
-
-import Logo from '../components/atoms/Logo'
 import FormSignUp from '../components/templates/FormSignUp'
-import LinkLogin from '../components/templates/LinkLogin'
 
-const SignUp = () => (
-  <MuiContainer component="main" maxWidth="xs">
-    <Wrapper>
-      <LogoWrapper>
-        <Logo />
-      </LogoWrapper>
-      <FormSignUpWrapper>
-        <FormSignUp />
-      </FormSignUpWrapper>
-      <LinkLoginWrapper>
-        <LinkLogin />
-      </LinkLoginWrapper>
-    </Wrapper>
-  </MuiContainer>
-)
+const ContainerSignUp = () => <FormSignUp />
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  min-height: 100vh;
-  max-width: 400px;
-`
-
-const LogoWrapper = styled.div`
-  max-width: 100px;
-  margin: 10px 0;
-`
-
-const FormSignUpWrapper = styled.div`
-  width: 100%;
-  margin-bottom: 10px;
-`
-
-const LinkLoginWrapper = styled.div`
-  text-align: center;
-  margin-bottom: 10px;
-`
-
-export default SignUp
+export default ContainerSignUp
