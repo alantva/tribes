@@ -6,44 +6,44 @@ import MuiFormGroup from '@material-ui/core/FormGroup'
 import MuiTextField from '@material-ui/core/TextField'
 import FacebookButton from '../atoms/FacebookButton'
 
-// @@TODO: Icon Button
-
-const FormSignUp = () => (
-  <MuiFormGroup>
-    <MuiTextField id="name" label="NOME" variant="outlined" color="primary"/>
-    <br />
-    <MuiTextField id="last_name" label="SOBRENOME" variant="outlined" color="primary"/>
-    <br />
-    <MuiTextField id="username" label="NOME DE USUÁRIO" variant="outlined" color="primary"/>
-    <br />
-    <MuiTextField id="email" label="EMAIL" variant="outlined" color="primary"/>
-    <br />
-    <MuiTextField
-      id="password"
-      label="SENHA"
-      type="password"
-      variant="outlined"
-      color="primary"
-    />
-    <br />
-    <MuiTextField
-      id="confirm_password"
-      label="DIGITE SUA SENHA NOVAMENTE"
-      type="password"
-      variant="outlined"
-      color="primary"
-    />
-    <br />
-    <FormSignUpButtonWrapper display="flex" justifyContent="space-evenly">
-      <NextLink href="/signup/what-is-your-tribe">
-        <MuiButton variant="contained" color="primary" fullWidth>CADASTRAR</MuiButton>
-      </NextLink>
-      <NextLink href="/">
-        <FacebookButton>SIGN IN</FacebookButton>
-      </NextLink>
-    </FormSignUpButtonWrapper>
-  </MuiFormGroup>
-)
+const FormSignUp = () => {
+  const inputProps = {
+    variant: 'outlined',
+    color: 'primary'
+  }
+  const inputLabels = {
+    name: 'NOME',
+    last_name: 'SOBRENOME',
+    username: 'NOME DE USUÁRIO',
+    email: 'EMAIL',
+    password: 'SENHA',
+    confirm_password: 'DIGITE SUA SENHA NOVAMENTE'
+  }
+  return (
+    <MuiFormGroup>
+      <MuiTextField id="name" label={inputLabels.name} {...inputProps} />
+      <br />
+      <MuiTextField id="last_name" label={inputLabels.last_name} {...inputProps} />
+      <br />
+      <MuiTextField id="username" label={inputLabels.username} {...inputProps} />
+      <br />
+      <MuiTextField id="email" label={inputLabels.email} {...inputProps} />
+      <br />
+      <MuiTextField id="password" type="password" label={inputLabels.password} {...inputProps} />
+      <br />
+      <MuiTextField id="confirm_password" type="password" label={inputLabels.confirm_password} {...inputProps} />
+      <br />
+      <FormSignUpButtonWrapper display="flex" justifyContent="space-evenly">
+        <NextLink href="/signup/what-is-your-tribe">
+          <MuiButton variant="contained" color="primary" fullWidth>CADASTRAR</MuiButton>
+        </NextLink>
+        <NextLink href="/">
+          <FacebookButton>SIGN IN</FacebookButton>
+        </NextLink>
+      </FormSignUpButtonWrapper>
+    </MuiFormGroup>
+  )
+}
 
 const FormSignUpButtonWrapper = styled.div`
   display: flex;

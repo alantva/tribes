@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import MuiContainer from '@material-ui/core/Container'
 
 import Logo from '../components/atoms/Logo'
-import LinkLogin from '../components/templates/LinkLogin'
 
 const SignUp = ({ children }) => (
   <MuiContainer component="main" maxWidth="xs">
@@ -14,9 +13,6 @@ const SignUp = ({ children }) => (
       <ChildrenWrapper>
         {children}
       </ChildrenWrapper>
-      <LinkLoginWrapper>
-        <LinkLogin />
-      </LinkLoginWrapper>
     </Wrapper>
   </MuiContainer>
 )
@@ -25,7 +21,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   min-height: 100vh;
   max-width: 400px;
 `
@@ -38,12 +34,7 @@ const LogoWrapper = styled.div`
 const ChildrenWrapper = styled.div`
   width: 100%;
   text-align: center;
-  margin-bottom: 10px;
-`
-
-const LinkLoginWrapper = styled.div`
-  text-align: center;
-  margin-bottom: 10px;
+  margin: 10px 0;
 `
 
 export default SignUp

@@ -26,6 +26,11 @@ const theme = createMuiTheme({
           backdropFilter: 'blur(3px)'
         }
       }
+    },
+    MuiLink: {
+      root: {
+        cursor: 'pointer'
+      }
     }
   }
 })

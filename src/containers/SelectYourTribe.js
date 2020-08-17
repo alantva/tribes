@@ -1,28 +1,47 @@
-import Stepper from '@material-ui/core/Stepper'
-import Step from '@material-ui/core/Step'
-import StepLabel from '@material-ui/core/StepLabel'
+import styled from 'styled-components'
+import NextLink from 'next/link'
 
-const ContainerSelectYourTribe = () => {
-  const [activeStep, setActiveStep] = React.useState(0)
-  // stepProps.completed = false
+import MuiTypography from '@material-ui/core/Typography'
+import MuiButton from '@material-ui/core/Button'
+import MuiArrowForwardIcon from '@material-ui/icons/ArrowForward'
+import MuiArrowBackIcon from '@material-ui/icons/ArrowBack'
 
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  }
+const ContainerWhatIsYourTribe = () => (
+  <>
+    <SelectionWrapper>
+      <MuiTypography variant="h4">Selecione suas tribos!</MuiTypography>
+      <MuiTypography variant="caption">
+        Em construção
+      </MuiTypography>
+    </SelectionWrapper>
+    <ButtonWrapper>
+      <NextLink href="/signup/what-is-your-tribe">
+        <MuiButton color="primary" startIcon={<MuiArrowBackIcon />}>
+          VOLTAR
+        </MuiButton>
+      </NextLink>
+      <NextLink href="/feed">
+        <MuiButton color="primary" endIcon={<MuiArrowForwardIcon />}>
+          CONCLUIR
+        </MuiButton>
+      </NextLink>
+    </ButtonWrapper>
+  </>
+)
 
-  return (
-    <>
-      <Stepper activeStep={activeStep}>
-        <Step>
-          <StepLabel>Step 1</StepLabel>
-        </Step>
-        <Step>
-          <StepLabel>Step 2</StepLabel>
-        </Step>
-      </Stepper>
-      <button onClick={handleNext}>Next!</button>
-    </>
-  )
-}
+const SelectionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  margin: 10px 0;
+`
 
-export default ContainerSelectYourTribe
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+`
+
+export default ContainerWhatIsYourTribe
