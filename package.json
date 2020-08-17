@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "deploy": "next build && next export -o dist && git add dist -f && git commit -n -m \"Deploying to gh-pages\" && git push origin master && git subtree push --prefix dist origin gh-pages"
+    "start": "next start"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
