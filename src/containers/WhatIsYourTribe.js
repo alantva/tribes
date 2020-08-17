@@ -37,15 +37,18 @@ const Wrapper = styled.div`
 
 const LogoWrapper = styled.div`
   max-width: 220px;
+  margin: 10px 0;
 `
 
 const TextWrapper = styled.div`
   text-align: center;
   width: 100%;
+  margin-bottom: 10px;
 `
 
 const LinkLoginWrapper = styled.div`
   text-align: center;
+  margin-bottom: 10px;
 `
 
 export default WhatIsYourTribe

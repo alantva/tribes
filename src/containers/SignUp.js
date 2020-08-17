@@ -33,14 +33,17 @@ const Wrapper = styled.div`
 
 const LogoWrapper = styled.div`
   max-width: 100px;
+  margin: 10px 0;
 `
 
 const FormSignUpWrapper = styled.div`
   width: 100%;
+  margin-bottom: 10px;
 `
 
 const LinkLoginWrapper = styled.div`
   text-align: center;
+  margin-bottom: 10px;
 `
 
 export default SignUp
