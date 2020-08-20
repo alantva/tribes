@@ -6,7 +6,7 @@ import {
 } from '../actions/tribes.action'
 import { apiRequest } from '../actions/api.action'
 
-const URL = 'http://localhost:3000/api/tribes'
+const URL = '/api/tribes'
 
 // this middleware only care about the getBooks action
 export const fetchTribesFlow = ({ dispatch }) => next => action => {
@@ -19,7 +19,7 @@ export const fetchTribesFlow = ({ dispatch }) => next => action => {
 
 // on successful fetch, process the books data
 export const onFetchTribesFlow = ({dispatch}) => next => action => {
-  next(action);
+  next(action)
 
   if (action.type === FETCH_TRIBES_SUCCESS) {
     dispatch(setTribes(action.payload))
