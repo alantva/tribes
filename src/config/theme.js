@@ -24,6 +24,15 @@ const theme = createMuiTheme({
           backgroundSize: 'cover',
           backgroundAttachment: 'fixed',
           backdropFilter: 'blur(3px)'
+        },
+        '*::-webkit-scrollbar': {
+          width: '5px',
+        },
+        '*::-webkit-scrollbar-thumb': {
+          background: '#ddd',
+        },
+        '*::-webkit-scrollbar-track': {
+          background: '#666',
         }
       }
     },

@@ -1,0 +1,41 @@
+const db = [
+  { _id: 1, description: 'Hippies' },
+  { _id: 2, description: 'Hip Hop' },
+  { _id: 3, description: 'Skinheads' },
+  { _id: 4, description: 'Punks' },
+  { _id: 5, description: 'Surfistas' },
+  { _id: 6, description: 'Motoqueiros' },
+  { _id: 7, description: 'Nerds' },
+  { _id: 8, description: 'Roqueiros' },
+  { _id: 9, description: 'Metaleiros' },
+  { _id: 10, description: 'Grunges' },
+  { _id: 11, description: 'Góticos' },
+  { _id: 12, description: 'Rastafári' },
+  { _id: 13, description: 'Funkeiros' },
+  { _id: 14, description: 'Steampunk' },
+  { _id: 15, description: 'Clubbers' },
+  { _id: 16, description: 'Otakus' },
+  { _id: 17, description: 'Bikers' },
+  { _id: 18, description: 'Emos' },
+  { _id: 19, description: 'Hipsters' },
+  { _id: 20, description: 'Geeks' },
+  { _id: 21, description: 'Yuppies' },
+  { _id: 22, description: 'Veganos' },
+  { _id: 23, description: 'Playboys' },
+  { _id: 24, description: 'Patricinhas' },
+  { _id: 25, description: 'Dorks' },
+  { _id: 26, description: 'Mods' },
+  { _id: 27, description: 'Teddy Boys' },
+  { _id: 28, description: 'Skatistas' },
+  { _id: 29, description: 'Cosplayers' },
+  { _id: 30, description: 'Indies' },
+  { _id: 31, description: 'Straight Edge' },
+  { _id: 32, description: 'Preppies' },
+  { _id: 33, description: 'Dirces' },
+  { _id: 34, description: 'Bling-Bling' },
+  { _id: 35, description: 'Dândi' }
+]
+
+export default function handler(req, res) {
+  res.status(200).json(db)
+}

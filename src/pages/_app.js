@@ -1,11 +1,12 @@
 import React from 'react'
 import App from 'next/app'
 import Head from 'next/head'
+import { wrapper } from '../store'
 import { ThemeProvider } from '@material-ui/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from '../config/theme'
 
-class MyApp extends App {
+class TribesApp extends App {
   componentDidMount() {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side')
@@ -32,4 +33,4 @@ class MyApp extends App {
   }
 }
 
-export default MyApp
+export default wrapper.withRedux(TribesApp)
