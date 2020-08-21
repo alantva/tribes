@@ -1,10 +1,10 @@
-import LayoutIndex from '../layouts/Index'
+import LayoutInternal from '../layouts/Internal'
 import ContainerFeed from '../containers/Feed'
 
 const PageFeed = () => (
-  <LayoutIndex>
+  <LayoutInternal title="Feed">
     <ContainerFeed />
-  </LayoutIndex>
+  </LayoutInternal>
 )
 
 export default PageFeed

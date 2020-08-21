@@ -5,7 +5,7 @@ import MuiContainer from '@material-ui/core/Container'
 import Logo from '../components/atoms/Logo'
 import LinkSignUp from '../components/templates/LinkSignUp'
 
-const LayoutLogin = ({ children }) => (
+const LayoutExternal = ({ children }) => (
   <MuiContainer component="main" maxWidth="xs">
     <Wrapper>
       <LogoWrapper>
@@ -46,4 +46,4 @@ const LinkSignUpWrapper = styled.div`
   margin-bottom: 10px;
 `
 
-export default LayoutLogin
+export default LayoutExternal

@@ -1,10 +1,10 @@
-import LayoutIndex from '../layouts/Index'
+import LayoutExternal from '../layouts/External'
 import ContainerLogin from '../containers/Login'
 
 const PageIndex = () => (
-  <LayoutIndex>
+  <LayoutExternal>
     <ContainerLogin />
-  </LayoutIndex>
+  </LayoutExternal>
 )
 
 export default PageIndex
