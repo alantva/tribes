@@ -1,49 +1,67 @@
 import styled from 'styled-components'
 
+import Head from 'next/head'
 import MuiContainer from '@material-ui/core/Container'
+import { makeStyles } from '@material-ui/core/styles'
 
 import AppMenu from '../components/templates/AppMenu'
 import Logo from '../components/atoms/Logo'
-import LinkSignUp from '../components/templates/LinkSignUp'
 
-const LayoutInternal = ({ title, children }) => (
-  <MuiContainer component="main" maxWidth="xs">
-    <AppMenu title={title} />
-    <Wrapper>
-      <LogoWrapper>
-        <Logo />
-      </LogoWrapper>
-      <ChildrenWrapper>
-        {children}
-      </ChildrenWrapper>
-      <LinkSignUpWrapper>
-        <LinkSignUp />
-      </LinkSignUpWrapper>
-    </Wrapper>
-  </MuiContainer>
-)
+const useStyles = makeStyles(theme => ({
+  wrapper: {
+    minHeight: '100vh',
+    paddingTop: 56,
+    [`${theme.breakpoints.up('xs')} and (orientation: landscape)`]: { 
+      paddingTop: 48, 
+    }, 
+    [theme.breakpoints.up('sm')]: { 
+      paddingTop: 64, 
+    }, 
+  },
+}))
+
+const LayoutInternal = ({ title, children }) => {
+  const classes = useStyles()
+
+  return (
+    <>
+      {title
+        ? (
+          <Head>
+            <title>{`Tribes >> ${title}`}</title>
+          </Head>
+        ) : null
+      }
+      <MuiContainer component="main" maxWidth="xs">
+        <AppMenu title={title} />
+        <Wrapper className={classes.wrapper}>
+          <LogoWrapper>
+            <Logo />
+          </LogoWrapper>
+          <ChildrenWrapper>
+            {children}
+          </ChildrenWrapper>
+        </Wrapper>
+      </MuiContainer>
+    </>
+  )
+}
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  min-height: 100vh;
+  justify-content: flex-start;
   max-width: 400px;
 `
 
 const LogoWrapper = styled.div`
   max-width: 220px;
-  margin: 10px 0;
+  margin: 50px 0;
 `
 
 const ChildrenWrapper = styled.div`
   width: 100%;
-  text-align: center;
-  margin-bottom: 10px;
-`
-
-const LinkSignUpWrapper = styled.div`
   text-align: center;
   margin-bottom: 10px;
 `
