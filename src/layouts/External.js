@@ -1,25 +1,14 @@
-import styled from 'styled-components'
-
+// MUI Imports
 import MuiContainer from '@material-ui/core/Container'
 
+// Atoms Imports
 import Logo from '../components/atoms/Logo'
-import LinkSignUp from '../components/templates/LinkSignUp'
 
-const LayoutExternal = ({ children }) => (
-  <MuiContainer component="main" maxWidth="xs">
-    <Wrapper>
-      <LogoWrapper>
-        <Logo />
-      </LogoWrapper>
-      <ChildrenWrapper>
-        {children}
-      </ChildrenWrapper>
-      <LinkSignUpWrapper>
-        <LinkSignUp />
-      </LinkSignUpWrapper>
-    </Wrapper>
-  </MuiContainer>
-)
+// Molecules Imports
+import LinkSignUp from '../components/molecules/LinkSignUp'
+
+// Styled Components
+import styled from 'styled-components'
 
 const Wrapper = styled.div`
   display: flex;
@@ -45,5 +34,21 @@ const LinkSignUpWrapper = styled.div`
   text-align: center;
   margin-bottom: 10px;
 `
+// Component
+const LayoutExternal = ({ children }) => (
+  <MuiContainer component="main" maxWidth="xs">
+    <Wrapper>
+      <LogoWrapper>
+        <Logo />
+      </LogoWrapper>
+      <ChildrenWrapper>
+        {children}
+      </ChildrenWrapper>
+      <LinkSignUpWrapper>
+        <LinkSignUp />
+      </LinkSignUpWrapper>
+    </Wrapper>
+  </MuiContainer>
+)
 
 export default LayoutExternal

@@ -1,16 +1,13 @@
-
-import MuiTextField from '@material-ui/core/TextField'
+// MUI Imports
+import TextField from '../atoms/TextField'
 import MuiAutocomplete from '@material-ui/lab/Autocomplete'
 
-const Search = ({ placeholder, ...props }) => (
+// Component
+const Search = ({ label, ...props }) => (
   <MuiAutocomplete
     {...props}
     getOptionLabel={(option) => option.description}
-    renderInput={
-      (params) => (
-        <MuiTextField {...params} label={placeholder} variant="outlined" />
-      )
-    }
+    renderInput={(params) => (<TextField label={label} {...params} />)}
   />
 )
 

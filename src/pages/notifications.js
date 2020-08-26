@@ -1,9 +1,9 @@
 import LayoutInternal from '../layouts/Internal'
-import ContainerNotifications from '../containers/Notifications'
+import TemplateNotifications from '../components/templates/Notifications'
 
 const PageNotifications = () => (
   <LayoutInternal title="Notificações">
-    <ContainerNotifications />
+    <TemplateNotifications />
   </LayoutInternal>
 )
 

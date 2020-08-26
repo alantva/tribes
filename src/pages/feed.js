@@ -1,9 +1,9 @@
 import LayoutInternal from '../layouts/Internal'
-import ContainerFeed from '../containers/Feed'
+import TemplateFeed from '../components/templates/Feed'
 
 const PageFeed = () => (
   <LayoutInternal title="Feed">
-    <ContainerFeed />
+    <TemplateFeed />
   </LayoutInternal>
 )
 

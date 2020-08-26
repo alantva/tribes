@@ -1,9 +1,9 @@
 import LayoutInternal from '../layouts/Internal'
-import ContainerChat from '../containers/Chat'
+import TemplateChat from '../components/templates/Chat'
 
 const PageChat = () => (
   <LayoutInternal title="Chat">
-    <ContainerChat />
+    <TemplateChat />
   </LayoutInternal>
 )
 

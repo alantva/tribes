@@ -1,11 +1,17 @@
-import styled from 'styled-components'
-
+// Next Imports
 import Head from 'next/head'
-import MuiContainer from '@material-ui/core/Container'
-import { makeStyles } from '@material-ui/core/styles'
 
-import AppMenu from '../components/templates/AppMenu'
+// MUI Imports
+import MuiContainer from '@material-ui/core/Container'
+
+// Atoms Imports
 import Logo from '../components/atoms/Logo'
+
+// Organisms Imports
+import AppMenu from '../components/organisms/AppMenu'
+
+// MUI Styles
+import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles(theme => ({
   wrapper: {
@@ -20,32 +26,8 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const LayoutInternal = ({ title, children }) => {
-  const classes = useStyles()
-
-  return (
-    <>
-      {title
-        ? (
-          <Head>
-            <title>{`Tribes >> ${title}`}</title>
-          </Head>
-        ) : null
-      }
-      <MuiContainer component="main" maxWidth="xs">
-        <AppMenu title={title} />
-        <Wrapper className={classes.wrapper}>
-          <LogoWrapper>
-            <Logo />
-          </LogoWrapper>
-          <ChildrenWrapper>
-            {children}
-          </ChildrenWrapper>
-        </Wrapper>
-      </MuiContainer>
-    </>
-  )
-}
+// Styled Components
+import styled from 'styled-components'
 
 const Wrapper = styled.div`
   display: flex;
@@ -65,5 +47,36 @@ const ChildrenWrapper = styled.div`
   text-align: center;
   margin-bottom: 10px;
 `
+
+// Head Title Component
+const HeadTitle = ({ title }) => (
+  <Head>
+    <title>{`Tribes >> ${title}`}</title>
+  </Head>
+)
+
+// Component
+const LayoutInternal = ({ title, children }) => {
+  // MUI Styles
+  const classes = useStyles()
+
+  // Render
+  return (
+    <>
+      {title ? <HeadTitle title={title} /> : null}
+      <MuiContainer component="main" maxWidth="xs">
+        <AppMenu title={title} />
+        <Wrapper className={classes.wrapper}>
+          <LogoWrapper>
+            <Logo />
+          </LogoWrapper>
+          <ChildrenWrapper>
+            {children}
+          </ChildrenWrapper>
+        </Wrapper>
+      </MuiContainer>
+    </>
+  )
+}
 
 export default LayoutInternal

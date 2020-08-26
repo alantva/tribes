@@ -1,12 +1,14 @@
+// MUI Imports
 import MuiTypography from '@material-ui/core/Typography'
 
-const ContainerNotifications = () => (
+// Component
+const TemplateFriends = () => (
   <>
-    <MuiTypography variant="h4">Notificações</MuiTypography>
+    <MuiTypography variant="h4">Amigos</MuiTypography>
     <MuiTypography variant="caption">
       Em construção
     </MuiTypography>
   </>
 )
 
-export default ContainerNotifications
+export default TemplateFriends

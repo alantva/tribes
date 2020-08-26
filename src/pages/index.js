@@ -1,9 +1,9 @@
 import LayoutExternal from '../layouts/External'
-import ContainerLogin from '../containers/Login'
+import TemplateLogin from '../components/templates/Login'
 
 const PageIndex = () => (
   <LayoutExternal>
-    <ContainerLogin />
+    <TemplateLogin />
   </LayoutExternal>
 )
 

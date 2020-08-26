@@ -1,23 +1,25 @@
-import ListItem from '@material-ui/core/ListItem'
-import IconButton from '@material-ui/core/IconButton'
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
-import ListItemText from '@material-ui/core/ListItemText'
-import CloseIcon from '@material-ui/icons/Close'
+// MUI Imports
+import MuiListItem from '@material-ui/core/ListItem'
+import MuiIconButton from '@material-ui/core/IconButton'
+import MuiListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
+import MuiListItemText from '@material-ui/core/ListItemText'
+import MuiCloseIcon from '@material-ui/icons/Close'
 
-const OptionListItem = ({ onDelete, ...props }) => (
-  <ListItem>
-    <ListItemText primary={props.description} />
-    <ListItemSecondaryAction>
-      <IconButton
+// Component
+const OptionListItem = ({ value, onDelete }) => (
+  <MuiListItem>
+    <MuiListItemText primary={value.description} />
+    <MuiListItemSecondaryAction>
+      <MuiIconButton
         edge="end"
         aria-label="delete"
         size="small"
-        onClick={() => onDelete(props)}
+        onClick={() => onDelete(value)}
       >
-        <CloseIcon />
-      </IconButton>
-    </ListItemSecondaryAction>
-  </ListItem>
+        <MuiCloseIcon />
+      </MuiIconButton>
+    </MuiListItemSecondaryAction>
+  </MuiListItem>
 )
 
 export default OptionListItem

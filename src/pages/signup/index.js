@@ -1,9 +1,9 @@
 import LayoutSignUp from '../../layouts/SignUp'
-import ContainerSignUp from '../../containers/SignUp'
+import TemplateSignUp from '../../components/templates/SignUp'
 
 const PageSignUp = () => (
   <LayoutSignUp>
-    <ContainerSignUp />
+    <TemplateSignUp />
   </LayoutSignUp>
 )
 

@@ -1,16 +1,45 @@
+// React Imports
 import { useEffect, useState } from 'react'
-import styled from 'styled-components'
+
+// Next Imports
 import NextLink from 'next/link'
 
+// MUI Imports
 import MuiButton from '@material-ui/core/Button'
 import MuiArrowForwardIcon from '@material-ui/icons/ArrowForward'
 import MuiArrowBackIcon from '@material-ui/icons/ArrowBack'
 
-import Search from '../components/molecules/Search'
-import OptionList from '../components/molecules/OptionList'
-import sortOptions from '../helpers/sortOptions'
+// Molecules Imports
+import Search from '../molecules/Search'
+import OptionList from '../molecules/OptionList'
 
-const ContainerSelectYourTribe = (props) => {
+// Helpers Imports
+import sortOptions from '../../helpers/sortOptions'
+
+// Styled Components
+import styled from 'styled-components'
+
+const SelectionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 400px;
+  margin: 10px 0;
+  & > *:not(:first-child) {
+    margin-top: 5px;
+  }
+`
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+`
+
+// Component
+const TemplateSelectYourTribe = (props) => {
+  // State
   const [searchValue, setSearchValue] = useState(null)
   const [inputValue, setInputValue] = useState('')
   const [allOptions, setAllOptions] = useState(props.tribes)
@@ -25,7 +54,8 @@ const ContainerSelectYourTribe = (props) => {
     setSelectedOptions([])
     setSuggestions(sortOptions(allOptions))
   }, [allOptions])
-
+  
+  // Methods
   const handleSearchChange = (event, value, reason) => {
     if (reason === 'select-option') {
       const nSelectedOptions = [...selectedOptions, value]
@@ -44,6 +74,7 @@ const ContainerSelectYourTribe = (props) => {
     setSuggestions(sortOptions(nSuggestions))
   }
 
+  // Render
   return (
     <>
       <SelectionWrapper>
@@ -51,14 +82,13 @@ const ContainerSelectYourTribe = (props) => {
           value={searchValue}
           inputValue={inputValue}
           options={suggestions}
-          placeholder="Faça uma busca..."
+          label="Faça uma busca..."
           noOptionsText="Não há tribos para selecionar..."
           fullWidth
           blurOnSelect
           onChange={handleSearchChange}
           onInputChange={(event, value) => setInputValue(value)}
         />
-        <br />
         <OptionList options={selectedOptions} onDeleteOption={handleDeleteOption} />
       </SelectionWrapper>
       <ButtonWrapper>
@@ -77,19 +107,4 @@ const ContainerSelectYourTribe = (props) => {
   )
 }
 
-const SelectionWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 400px;
-  margin: 10px 0;
-`
-
-const ButtonWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0;
-`
-
-export default ContainerSelectYourTribe
+export default TemplateSelectYourTribe

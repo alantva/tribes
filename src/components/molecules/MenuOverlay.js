@@ -1,4 +1,7 @@
+// Next Imports
 import NextLink from 'next/link'
+
+// MUI Imports 
 import MuiDrawer from '@material-ui/core/Drawer'
 import MuiList from '@material-ui/core/List'
 import MuiListItem from '@material-ui/core/ListItem'
@@ -11,6 +14,8 @@ import MuiSatelliteIcon from '@material-ui/icons/Satellite'
 import MuiPeopleIcon from '@material-ui/icons/People'
 import MuiForumIcon from '@material-ui/icons/Forum'
 import MuiFlagIcon from '@material-ui/icons/Flag'
+
+// MUI Styles
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 
 const drawerWidth = 240
@@ -27,37 +32,41 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
+// Pages
+const pages = [
+  {
+    _id: 'feed',
+    href: '/feed',
+    text: 'Feed',
+    iconComponent: <MuiSatelliteIcon />
+  },
+  {
+    _id: 'friends',
+    href: '/friends',
+    text: 'Amigos',
+    iconComponent: <MuiPeopleIcon />
+  },
+  {
+    _id: 'chat',
+    href: '/chat',
+    text: 'Chat',
+    iconComponent: <MuiForumIcon />
+  },
+  {
+    _id: 'notifications',
+    href: '/notifications',
+    text: 'Notificações',
+    iconComponent: <MuiFlagIcon />
+  },
+]
+
+// Component
 const MenuOverlay = ({ onToggleMenu, ...props }) => {
+  // MUI Styles
   const classes = useStyles()
   const theme = useTheme()
 
-  const pages = [
-    {
-      _id: 'feed',
-      href: '/feed',
-      text: 'Feed',
-      iconComponent: <MuiSatelliteIcon />
-    },
-    {
-      _id: 'friends',
-      href: '/friends',
-      text: 'Amigos',
-      iconComponent: <MuiPeopleIcon />
-    },
-    {
-      _id: 'chat',
-      href: '/chat',
-      text: 'Chat',
-      iconComponent: <MuiForumIcon />
-    },
-    {
-      _id: 'notifications',
-      href: '/notifications',
-      text: 'Notificações',
-      iconComponent: <MuiFlagIcon />
-    },
-  ]
-
+  // Render
   return (
     <nav className={classes.drawer}>
       <MuiDrawer

@@ -1,9 +1,9 @@
 import LayoutSignUp from '../../layouts/SignUp'
-import ContainerWhatIsYourTribe from '../../containers/WhatIsYourTribe'
+import TemplateWhatIsYourTribe from '../../components/templates/WhatIsYourTribe'
 
 const PageWhatIsYourTribe = () => (
   <LayoutSignUp>
-    <ContainerWhatIsYourTribe />
+    <TemplateWhatIsYourTribe />
   </LayoutSignUp>
 )
 

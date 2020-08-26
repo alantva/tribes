@@ -1,9 +1,9 @@
 import LayoutInternal from '../layouts/Internal'
-import ContainerFriends from '../containers/Friends'
+import TemplateFriends from '../components/templates/Friends'
 
 const PageFriends = () => (
   <LayoutInternal title="Amigos">
-    <ContainerFriends />
+    <TemplateFriends />
   </LayoutInternal>
 )
 

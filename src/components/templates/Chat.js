@@ -1,12 +1,14 @@
+// MUI Imports
 import MuiTypography from '@material-ui/core/Typography'
 
-const ContainerFeed = () => (
+// Component
+const TemplateChat = () => (
   <>
-    <MuiTypography variant="h4">Feed</MuiTypography>
+    <MuiTypography variant="h4">Chat</MuiTypography>
     <MuiTypography variant="caption">
       Em construção
     </MuiTypography>
   </>
 )
 
-export default ContainerFeed
+export default TemplateChat

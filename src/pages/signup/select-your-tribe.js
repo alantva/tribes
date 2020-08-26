@@ -1,5 +1,5 @@
 import LayoutSignUp from '../../layouts/SignUp'
-import SelectYourTribe from '../../containers/SelectYourTribe'
+import TemplateSelectYourTribe from '../../components/templates/SelectYourTribe'
 
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
@@ -12,7 +12,7 @@ const PageSelectYourTribe = (props) => {
   
   return (
     <LayoutSignUp>
-      <SelectYourTribe tribes={props.tribes} />
+      <TemplateSelectYourTribe tribes={props.tribes} />
     </LayoutSignUp>
   )
 }
