@@ -1,5 +1,6 @@
 import { applyMiddleware } from 'redux'
 import apiMiddleware from './api.middleware'
+import feedsMiddleware from './feeds.middleware'
 import tribesMiddleware from './tribes.middleware'
 
 const bindMiddleware = (middleware) => {
@@ -11,6 +12,7 @@ const bindMiddleware = (middleware) => {
 }
 
 export default bindMiddleware([
+  ...feedsMiddleware,
   ...tribesMiddleware,
   apiMiddleware
 ])

@@ -8,7 +8,7 @@ import { apiRequest } from '../actions/api.action'
 
 const URL = '/api/tribes'
 
-// this middleware only care about the getBooks action
+// this middleware only care about the fetchTribes action
 export const fetchTribesFlow = ({ dispatch }) => next => action => {
   next(action)
 
@@ -17,8 +17,8 @@ export const fetchTribesFlow = ({ dispatch }) => next => action => {
   }
 }
 
-// on successful fetch, process the books data
-export const onFetchTribesFlow = ({dispatch}) => next => action => {
+// on successful fetch, process the tribes data
+export const onFetchTribesFlow = ({ dispatch }) => next => action => {
   next(action)
 
   if (action.type === FETCH_TRIBES_SUCCESS) {

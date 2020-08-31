@@ -34,7 +34,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  max-width: 400px;
 `
 
 const LogoWrapper = styled.div`
@@ -64,7 +63,7 @@ const LayoutInternal = ({ title, children }) => {
   return (
     <>
       {title ? <HeadTitle title={title} /> : null}
-      <MuiContainer component="main" maxWidth="xs">
+      <MuiContainer component="main" maxWidth="md">
         <AppMenu title={title} />
         <Wrapper className={classes.wrapper}>
           <LogoWrapper>
